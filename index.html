@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'title-color': '#4E5150',
+                'sm-title-color': '#BDBDBD',
+                'para-color': '#A9A9A9',
+                'bg-color': '#E5E5E5',
+              }
+            }
+          }
+        }
+      </script>
+
+
+    <!-- Custom Style -->
+    <style>
+        .font-mont{
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="text-center">
+       <div class="flex  flex-col justify-center items-center mt-12">
+        <img class="rounded-lg h-60 w-64 mb-5" src="images/profilePhoto.png" alt="">
+        <h2 class="text-2xl text-title-color font-semibold mb-3">Rodney Cotton</h2>
+        <p class="text-sm text-para-color font-semibold">Helsinki, Finland</p>
+       </div>
+       <div class="flex gap-2 lg:gap-6 justify-center items-center mt-7 px-2 lg:px-0">
+        <div class="bg-bg-color px-6 py-4 h-20 w-28 rounded-xl">
+          <h3 class="text-title-color text-lg font-semibold bg">100</h3>
+          <h6 class="text-sm-title-color text-sm font-semibold">Posts</h6>
+        </div>
+        <div class="bg-bg-color px-6 py-4 h-20 w-28 rounded-xl">
+          <h3 class="text-title-color text-lg font-semibold bg">2,242</h3>
+          <h6 class="text-sm-title-color text-sm font-semibold">Follower</h6>
+        </div>
+        <div class="bg-bg-color px-6 py-4 h-20 w-28 rounded-xl">
+          <h3 class="text-title-color text-lg font-semibold bg">1,432</h3>
+          <h6 class="text-sm-title-color text-sm font-semibold">Following</h6>
+        </div>
+       </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- Gallery Section -->
+     <section class="mt-12 max-w-[1180px] mx-auto mb-20">
+        <div class="grid grid-cols-3 justify-center items-center gap-2 lg:gap-6 px-3 lg:px-0">
+          <img class="drop-shadow-md rounded-xl" src="images/photo1.png" alt="">
+          <img class="col-span-2 drop-shadow-md rounded-xl" src="images/photo2.png" alt="">
+          <img class="col-span-2 drop-shadow-md rounded-xl" src="images/photo3.png" alt="">
+          <img class="row-span-2 drop-shadow-md rounded-xl lg:h-[780px]" src="images/photo_4.png" alt="">
+          <img class="drop-shadow-md rounded-xl" src="images/photo5.png" alt="">
+          <img class="drop-shadow-md rounded-xl" src="images/photo6.png" alt="">
+        </div>
+      </section>
+    </main>
+
+</body>
+</html>
